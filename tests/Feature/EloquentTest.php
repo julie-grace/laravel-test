@@ -18,6 +18,7 @@ class EloquentTest extends TestCase
     {
         $article = ['title' => 'Something', 'news_text' => 'Something'];
         Morningnews::create($article);
+        //TEST
 
         $this->assertDatabaseHas('morning_news', $article);
     }
